@@ -11,7 +11,11 @@ const map = new mapboxgl.Map({
 const waypoints = [
     { coords: [3.0364, 42.8511], name: "Port Leucate" },
     { coords: [3.1068, 42.5188], name: "Port-Vendres" },
-    { coords: [3.8392, 40.0023], name: "Ciutadella de Menorca" },
+    { coords: [3.6119, 42.2947], name: "Golfe du Lion" },
+     { coords: [3.8392, 40.0023], name: "Ciutadella de Menorca" },
+    { coords: [1.9284, 37.7821], name: "Mer Méditerranée Espagnoles" },
+    { coords: [-1.9932, 36.2575], name: "Mer d'Alboran" },
+    { coords: [-5.3598, 36.1583], name: "Gibraltar" },
 ];
 
 let weatherPopups = [];
