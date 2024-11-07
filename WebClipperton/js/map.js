@@ -16,6 +16,9 @@ const waypoints = [
     { coords: [1.9284, 37.7821], name: "Mer Méditerranée Espagnoles" },
     { coords: [-1.9932, 36.2575], name: "Mer d'Alboran" },
     { coords: [-5.3598, 36.1583], name: "Gibraltar" },
+    { coords: [-5.4920, 35.9948], name: "Espagne" },
+    { coords: [-6.0601, 35.9020], name: "Maroc" },
+    { coords: [-6.4922, 35.2713], name: "Océan Atlantique Nord" },
 ];
 
 let weatherPopups = [];
