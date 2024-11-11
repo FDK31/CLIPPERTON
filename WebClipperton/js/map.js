@@ -274,3 +274,59 @@ map.on('load', () => {
 
     });
 });
+
+// CODE IMAGES JM 
+
+// Fonction pour créer un marqueur avec une image miniature
+function createImageMarker(coords, imageName) {
+    const el = document.createElement('div');
+    el.className = 'marker';
+    el.style.backgroundImage = `url('/img/${imageName}')`;
+    el.style.width = '50px';
+    el.style.height = '50px';
+    el.style.backgroundSize = 'cover';
+    el.style.cursor = 'pointer';
+
+    el.addEventListener('click', () => {
+        openImageModal(imageName);
+    });
+
+    return new mapboxgl.Marker(el)
+        .setLngLat(coords)
+        .addTo(map);
+}
+
+// Fonction pour ouvrir une modal avec l'image agrandie
+function openImageModal(imageName) {
+    const modal = document.createElement('div');
+    modal.style.position = 'fixed';
+    modal.style.top = '0';
+    modal.style.left = '0';
+    modal.style.width = '100%';
+    modal.style.height = '100%';
+    modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
+    modal.style.display = 'flex';
+    modal.style.justifyContent = 'center';
+    modal.style.alignItems = 'center';
+    modal.style.zIndex = '1000';
+
+    const img = document.createElement('img');
+    img.src = `/img/${imageName}`;
+    img.style.maxWidth = '90%';
+    img.style.maxHeight = '90%';
+    img.style.objectFit = 'contain';
+
+    modal.appendChild(img);
+    document.body.appendChild(modal);
+
+    modal.addEventListener('click', () => {
+        document.body.removeChild(modal);
+    });
+}
+
+// Ajouter les marqueurs d'images pour chaque point
+waypoints.forEach((point, index) => {
+    // Assurez-vous d'avoir une image correspondante pour chaque point
+    const imageName = `image_${index + 1}.jpg`; // Ajustez le nom de fichier selon vos besoins
+    createImageMarker(point.coords, imageName);
+});
