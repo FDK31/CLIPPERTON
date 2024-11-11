@@ -19,6 +19,7 @@ const waypoints = [
     { coords: [-5.4920, 35.9948], name: "Espagne" },
     { coords: [-6.0601, 35.9020], name: "Maroc" },
     { coords: [-6.4922, 35.2713], name: "Océan Atlantique Nord" },
+    { coords: [-6.8427, 34.0381], name: "Rabat, Maroc" },
 ];
 
 let weatherPopups = [];
