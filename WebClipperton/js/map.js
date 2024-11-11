@@ -281,7 +281,7 @@ map.on('load', () => {
 function createImageMarker(coords, imageName) {
     const el = document.createElement('div');
     el.className = 'marker';
-    el.style.backgroundImage = `url('https://github.com/FDK31/CLIPPERTON/tree/main/WebClipperton/js/img/${imageName}')`;
+    el.style.backgroundImage = `url('/main/WebClipperton/js/img/${imageName}')`;
     el.style.width = '50px';
     el.style.height = '50px';
     el.style.backgroundSize = 'cover';
@@ -311,7 +311,7 @@ function openImageModal(imageName) {
     modal.style.zIndex = '1000';
 
     const img = document.createElement('img');
-    img.src = `https://github.com/FDK31/CLIPPERTON/tree/main/WebClipperton/js/img/${imageName}`;
+    img.src = `/main/WebClipperton/js/img/${imageName}`;
     img.style.maxWidth = '90%';
     img.style.maxHeight = '90%';
     img.style.objectFit = 'contain';
