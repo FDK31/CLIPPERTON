@@ -22,6 +22,10 @@ const waypoints = [
     { coords: [-6.8427, 34.0381], name: "Rabat, Maroc" },
     { coords: [-10.5801, 32.9715], name: "Océan Atlantique Nord" },
     { coords: [-13.8560, 28.4891], name: "Les îles Canaries - Puerto del Rosario" },
+    { coords: [-23.2735, 20.8506], name: "Océan Atlantique Nord" },
+    { coords: [-49.8478, 16.8167], name: "Océan Atlantique Nord" },
+    { coords: [-61.1843, 16.2203], name: "Guadeloupe, France" },
+    { coords: [-61.2678, 16.2525], name: "Gouadeloupe - Marina Rêverie Caraïbe de Saint-François" },
 ];
 
 let weatherPopups = [];
