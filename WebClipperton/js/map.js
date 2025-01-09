@@ -26,6 +26,8 @@ const waypoints = [
     { coords: [-49.8478, 16.8167], name: "Océan Atlantique Nord" },
     { coords: [-61.1843, 16.2203], name: "Guadeloupe, France" },
     { coords: [-61.2678, 16.2525], name: "Gouadeloupe - Marina Rêverie Caraïbe de Saint-François" },
+    { coords: [-61.3221, 15.9564], name: "Marie-Galante - Saint-Louis" },
+    { coords: [-61.5407, 16.2413], name: "Gouadeloupe - Pointe-à-Pitre" },
 ];
 
 let weatherPopups = [];
