@@ -1,4 +1,4 @@
-mapboxgl.accessToken = 'pk.eyJ1Ijoic2hvbG93bWFrcHlkZSIsImEiOiJjbTJzNHZ2MWsxaGEzMmpzYmJxMHM3cHVmIn0.JoyvXxUYI-VtXIPDhBJmdg';
+mapboxgl.accessToken = 'pk.eyJ1Ijoic2hvbG93bWFrcHlkZSIsImEiOiJjbTJzNTRuNDExaDU4Mm9zOTkxNWltZWMyIn0.J3p843ZoBagQN6gkkX7XLQ';
 const meteoblueApiKey = '5oYZVqI4smnPXDkA';
 
 const map = new mapboxgl.Map({
