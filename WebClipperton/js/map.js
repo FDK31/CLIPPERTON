@@ -270,8 +270,10 @@ map.on('load', () => {
     let positionPopup = null;
 
     // Fonction pour ouvrir la page MarineTraffic
+    //https://www.marinetraffic.com/en/ais/home/shipid:9162513/zoom:13
+
     function showPosition() {
-        const url = "https://www.marinetraffic.com/en/ais/home/shipid:9162513/zoom:13";
+        const url = "https://www.marinetraffic.com/en/ais/details/ships/shipid:9162513/mmsi:227667540/imo:0/vessel:CLIPPERTON";
         window.open(url, '_blank');
     }
 
