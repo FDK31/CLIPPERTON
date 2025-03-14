@@ -28,6 +28,8 @@ const waypoints = [
     { coords: [-61.2678, 16.2525], name: "Gouadeloupe - Marina Rêverie Caraïbe de Saint-François" },
     { coords: [-61.3221, 15.9564], name: "Marie-Galante - Saint-Louis" },
     { coords: [-61.5407, 16.2413], name: "Gouadeloupe - Pointe-à-Pitre" },
+    { coords: [-75.7630, 10.9056], name: "Mer des Caraïbes" },
+    { coords: [-79.6592, 9.55896], name: "Muelle de Portobelo - Colón, Panamá" },
 ];
 
 let weatherPopups = [];
